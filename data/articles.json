@@ -1,0 +1,77 @@
+{
+  "generatedAt": "2026-09-27T05:49:30.800Z",
+  "articles": [
+    {
+      "title": "Database and Different Backup Strategies",
+      "description": "Part 1 — Database and Backup Strategies to Handle Different Kinds of Database Failure.",
+      "excerpt": "Part 1 — Database and Backup Strategies to Handle Different Kinds of Database Failure.",
+      "category": "Database Backup",
+      "tags": [
+        "PostgreSQL",
+        "Backup"
+      ],
+      "date": "2026-09-21",
+      "readingTime": 9,
+      "path": "articles/Database Backup/database_and_backup_strategies.md",
+      "slug": "database-backup/database-and-different-backup-strategies",
+      "filename": "database_and_backup_strategies.md"
+    },
+    {
+      "title": "Logical Backup Postgresql-Part2",
+      "description": "Part 2 — Hands-On Logical Backup: Same-Server Restore, Cross-Version Migration, and Selective Table Restore.",
+      "excerpt": "Part 2 — Hands-On Logical Backup: Same-Server Restore, Cross-Version Migration, and Selective Table Restore.",
+      "category": "Database Backup",
+      "tags": [
+        "PostgreSQL",
+        "Backup"
+      ],
+      "date": "2026-09-23",
+      "readingTime": 7,
+      "path": "articles/Database Backup/logical_backup_postgresql_part2.md",
+      "slug": "database-backup/logical-backup-postgresql-part2",
+      "filename": "logical_backup_postgresql_part2.md"
+    },
+    {
+      "title": "Physical Backup and Point-in-Time Recovery (PITR) with WAL Archiving",
+      "description": "Part-3 A hands-on walkthrough of WAL archiving, base backups, and Point-in-Time Recovery on PostgreSQL 16.",
+      "excerpt": "Part-3 A hands-on walkthrough of WAL archiving, base backups, and Point-in-Time Recovery on PostgreSQL 16.",
+      "category": "Database Backup",
+      "tags": [
+        "PostgreSQL",
+        "Backup",
+        "PITR",
+        "WAL"
+      ],
+      "date": "2026-09-24",
+      "readingTime": 13,
+      "path": "articles/Database Backup/point_in_time_recovery_in_postgres.md",
+      "slug": "database-backup/physical-backup-and-point-in-time-recovery-pitr-with-wal-archiving",
+      "filename": "point_in_time_recovery_in_postgres.md"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Physical Backup and Point-in-Time Recovery (PITR) with WAL Archiving",
+      "description": "Part-3 A hands-on walkthrough of WAL archiving, base backups, and Point-in-Time Recovery on PostgreSQL 16.",
+      "excerpt": "Part-3 A hands-on walkthrough of WAL archiving, base backups, and Point-in-Time Recovery on PostgreSQL 16.",
+      "category": "Database Backup",
+      "tags": [
+        "PostgreSQL",
+        "Backup",
+        "PITR",
+        "WAL"
+      ],
+      "date": "2026-09-24",
+      "readingTime": 13,
+      "path": "articles/Database Backup/point_in_time_recovery_in_postgres.md",
+      "slug": "database-backup/physical-backup-and-point-in-time-recovery-pitr-with-wal-archiving",
+      "filename": "point_in_time_recovery_in_postgres.md"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Database Backup",
+      "count": 3
+    }
+  ]
+}

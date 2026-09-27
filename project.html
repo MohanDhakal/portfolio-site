@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Project</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        pre {
+            overflow-x: auto;
+            padding: 15px;
+            background: #f5f5f5;
+        }
+
+        code {
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="readme">Loading...</div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const file = params.get("file");
+
+        const readme = document.getElementById("readme");
+
+        if (!file) {
+            readme.innerHTML = "<p>No Markdown file specified.</p>";
+        } else {
+
+            // URL of the README itself
+            const markdownUrl = new URL(file, window.location.href);
+
+            // Directory containing the README
+            const markdownDirectory = new URL(".", markdownUrl);
+
+            // Prevent browser caching the README
+            const fetchUrl = markdownUrl.href +
+                (markdownUrl.search ? "&" : "?") +
+                "_=" + Date.now();
+
+            fetch(fetchUrl, {
+                cache: "no-store"
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(
+                            `Could not load ${markdownUrl.pathname}`
+                        );
+                    }
+
+                    return response.text();
+                })
+                .then(markdown => {
+
+                    // Make relative images/links resolve relative
+                    // to the README's directory.
+                    const base = document.createElement("base");
+                    base.href = markdownDirectory.href;
+                    document.head.prepend(base);
+
+                    readme.innerHTML = marked.parse(markdown);
+                })
+                .catch(error => {
+                    readme.innerHTML = `
+                    <p>Unable to load Markdown file.</p>
+                    <p>${error.message}</p>
+                `;
+                });
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Article — Knowledge Garden</title>
+    <link rel="icon" href="data:,">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github.min.css"
+        media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github-dark.min.css"
+        media="(prefers-color-scheme: dark)">
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="progress-bar" id="progress-bar"></div>
+
+    <nav class="site-nav">
+        <div class="wrap">
+            <a class="brand" href="index.html"><span class="dot">&bull;</span> mohandkl.512/data-garden</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="articles.html">Articles</a>
+                <!-- <a href="about.html">About</a> -->
+            </div>
+            <button class="nav-search-btn" type="button" aria-label="Search articles">
+                Search <span class="hint"><kbd>&#8984;K</kbd></span>
+            </button>
+            <button class="nav-toggle" type="button" aria-label="Toggle menu">&#9776;</button>
+        </div>
+    </nav>
+
+    <main id="main">
+        <div class="wrap" id="article-root">
+            <div class="loading-hint">Loading article&hellip;</div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap" style="display:flex; justify-content:space-between; width:100%; flex-wrap:wrap; gap:10px;">
+            <span>Exploring tech world in-depth.</span>
+            <span><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></span>
+        </div>
+    </footer>
+
+    <div class="search-overlay">
+        <div class="search-panel">
+            <div class="search-input-row">
+                <span aria-hidden="true">&#128269;</span>
+                <input class="search-input" type="text" placeholder="Search articles..." aria-label="Search articles">
+                <span class="esc">ESC</span>
+            </div>
+            <div class="search-results"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/lib/core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/lib/languages/sql.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/lib/languages/bash.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/lib/languages/python.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/lib/languages/javascript.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/lib/languages/yaml.min.js"></script>
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/article.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Articles — Data Garden</title>
+    <meta name="description"
+        content="All articles on software development, data engineering, and PostgreSQL internals.">
+    <link rel="icon" href="data:,">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <nav class="site-nav">
+        <div class="wrap">
+            <a class="brand" href="index.html"><span class="dot">&bull;</span> mohandkl.512/data-garden</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="articles.html" class="active">Articles</a>
+                <!-- <a href="about.html">About</a> -->
+            </div>
+            <button class="nav-search-btn" type="button" aria-label="Search articles">
+                Search <span class="hint"><kbd>&#8984;K</kbd></span>
+            </button>
+            <button class="nav-toggle" type="button" aria-label="Toggle menu">&#9776;</button>
+        </div>
+    </nav>
+
+    <main id="main">
+        <div class="wrap">
+            <div class="page-head">
+                <h1>Articles</h1>
+                <p id="articles-count">Loading&hellip;</p>
+            </div>
+            <div class="filter-row" id="filter-row"></div>
+            <div class="card-grid" id="articles-grid">
+                <div class="loading-hint">Loading articles&hellip;</div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap" style="display:flex; justify-content:space-between; width:100%; flex-wrap:wrap; gap:10px;">
+            <span>Exploring tech world in-depth.</span>
+            <span><a href="https://github.com/MohanDhakal" target="_blank" rel="noopener">GitHub</a></span>
+        </div>
+    </footer>
+
+    <div class="search-overlay">
+        <div class="search-panel">
+            <div class="search-input-row">
+                <span aria-hidden="true">&#128269;</span>
+                <input class="search-input" type="text" placeholder="Search articles..." aria-label="Search articles">
+                <span class="esc">ESC</span>
+            </div>
+            <div class="search-results"></div>
+        </div>
+    </div>
+
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/articles.js"></script>
+</body>
+
+</html>
