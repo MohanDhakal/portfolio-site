@@ -1,4 +1,4 @@
-# Knowledge Garden
+<!-- # Knowledge Garden
 
 A minimal, content-first personal site for GitHub Pages. It's built from plain
 HTML/CSS/JS — no framework, no backend, no database. The Git repository *is*
@@ -143,4 +143,4 @@ Articles are rendered with [marked](https://marked.js.org/) and syntax
 highlighting from [highlight.js](https://highlightjs.org/), both loaded from
 a CDN at read time — no bundler involved. Headings, code blocks (with
 language hints, e.g. ```` ```sql ````), tables, blockquotes, images, and
-links all render out of the box.
+links all render out of the box. -->
