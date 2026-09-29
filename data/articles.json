@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T05:49:30.800Z",
+  "generatedAt": "2026-09-29T17:18:53.170Z",
   "articles": [
     {
       "title": "Database and Different Backup Strategies",
@@ -47,6 +47,22 @@
       "path": "articles/Database Backup/point_in_time_recovery_in_postgres.md",
       "slug": "database-backup/physical-backup-and-point-in-time-recovery-pitr-with-wal-archiving",
       "filename": "point_in_time_recovery_in_postgres.md"
+    },
+    {
+      "title": "Client Authentication in PostgreSQL",
+      "description": "How pg_hba.conf controls who can connect to PostgreSQL, over which channel, and with what proof of identity — understaning with examples.",
+      "excerpt": "How pg_hba.conf controls who can connect to PostgreSQL, over which channel, and with what proof of identity — understaning with examples.",
+      "category": "PostgreSQL",
+      "tags": [
+        "PostgreSQL",
+        "Authentication",
+        "Security"
+      ],
+      "date": "2026-09-29",
+      "readingTime": 6,
+      "path": "articles/PostgreSQL/client_authentication_in_postgresql.md",
+      "slug": "postgresql/client-authentication-in-postgresql",
+      "filename": "client_authentication_in_postgresql.md"
     }
   ],
   "highlights": [
@@ -72,6 +88,10 @@
     {
       "name": "Database Backup",
       "count": 3
+    },
+    {
+      "name": "PostgreSQL",
+      "count": 1
     }
   ]
 }
