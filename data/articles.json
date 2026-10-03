@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T17:18:53.170Z",
+  "generatedAt": "2026-10-03T13:59:14.872Z",
   "articles": [
     {
       "title": "Database and Different Backup Strategies",
@@ -63,6 +63,23 @@
       "path": "articles/PostgreSQL/client_authentication_in_postgresql.md",
       "slug": "postgresql/client-authentication-in-postgresql",
       "filename": "client_authentication_in_postgresql.md"
+    },
+    {
+      "title": "Roles and Privileges Management in PostgreSQL",
+      "description": "Creating and Managing Users and Roles in PostgreSQL with Role-level, Object-level privileges, and Ownership management. ",
+      "excerpt": "Creating and Managing Users and Roles in PostgreSQL with Role-level, Object-level privileges, and Ownership management. ",
+      "category": "PostgreSQL",
+      "tags": [
+        "PostgreSQL",
+        "Authorization",
+        "Roles",
+        "Privileges"
+      ],
+      "date": "2026-10-3",
+      "readingTime": 9,
+      "path": "articles/PostgreSQL/roles_and_privileges_management_postgresql.md",
+      "slug": "postgresql/roles-and-privileges-management-in-postgresql",
+      "filename": "roles_and_privileges_management_postgresql.md"
     }
   ],
   "highlights": [
@@ -91,7 +108,7 @@
     },
     {
       "name": "PostgreSQL",
-      "count": 1
+      "count": 2
     }
   ]
 }
